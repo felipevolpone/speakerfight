@@ -89,7 +89,7 @@
               </div>
 
               {% if proposal.author.id == request.user.id %}
-                <a class="btn-flat success pull-right text-upper" href="{% url 'create_event_proposal' slug=event.slug %}">
+                <a class="btn-flat success pull-right text-upper" href="{% url 'delete_event_proposal' slug=event.slug proposal=proposal.id %}">
                     <i class="icon-trash"></i>
                     {% trans "Delete your proposal" %}
                 </a>
