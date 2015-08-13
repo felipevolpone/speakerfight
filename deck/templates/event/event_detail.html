@@ -87,6 +87,14 @@
               <div class="proposal-description">
                 {{ proposal.description|safe|linebreaks }}
               </div>
+
+              {% if proposal.author.id == request.user.id %}
+                <a class="btn-flat success pull-right text-upper" href="{% url 'create_event_proposal' slug=event.slug %}">
+                    <i class="icon-trash"></i>
+                    {% trans "Delete your proposal" %}
+                </a>
+              {% endif %}
+
               {% include "event/vote_block.html" %}
             </div>
             {% if request.user in event.jury.users or request.user.is_superuser %}

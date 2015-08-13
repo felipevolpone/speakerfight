@@ -840,6 +840,10 @@ msgstr ""
 msgid "This proposal never received a vote."
 msgstr "Essa proposta nunca recebeu um voto."
 
+#: deck/templates/event/event_detail.html:92
+msgid "Delete your proposal"
+msgstr "Exclua sua proposta"
+
 #: deck/templates/event/event_detail.html:95
 msgid "Disapprove the proposal."
 msgstr "Desaprove a proposta."

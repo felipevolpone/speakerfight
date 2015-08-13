@@ -734,6 +734,10 @@ msgstr ""
 msgid "This proposal never received a vote."
 msgstr ""
 
+#: deck/templates/event/event_detail.html:92
+msgid "Delete your proposal"
+msgstr ""
+
 #: deck/templates/event/event_detail.html:95
 msgid "Disapprove the proposal."
 msgstr ""
